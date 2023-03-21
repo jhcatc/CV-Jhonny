@@ -1,0 +1,431 @@
+@use "components";
+
+@mixin title-menu-center {
+    padding-top: 1.5rem;
+    padding-bottom: 2.5rem;
+    justify-content: left;
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+}
+
+@mixin menu-main-center {
+    padding-top: 0.5;
+    align-items: start;
+}
+
+@mixin cta {
+    margin: 3rem;
+    width: 9rem;
+    height: 2.5rem;
+}
+
+
+html body {
+    margin: 0;
+    padding: 1rem 1rem 1rem 2rem;
+    background-color: components.$color-main1;
+}
+
+.menu-left {
+    padding-top: 1.5rem;
+    background-color: white;
+    border-radius: 0.65rem;
+    border: solid 2px components.$color-main1;
+    border-top: solid 1rem components.$color-main1;
+    height: 12rem;
+    width: 10%;
+
+    .language {
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        flex-direction: column;
+
+        .btn-sec {
+            padding: 0.5rem;
+            font-size: 14px;
+            margin-bottom: 0.2rem;
+            text-align: center;
+        }
+
+        .btn-main {
+            padding: 0.5rem;
+            font-size: 14px;
+            margin-bottom: 0.2rem;
+            text-align: center;
+        }
+
+        a {
+            text-decoration: none;
+        }
+    }
+
+}
+
+.menu-center {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: components.$color-main3;
+    border: solid 1.5px components.$color-main1;
+    border-radius: 0.25rem;
+    height: 32rem;
+    width: 32%;
+
+    .person-menu {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        border: none;
+        background-color: components.$color-main3;
+    }
+
+    .download-cv .downloads {
+        margin-top: 2rem;
+        display: flex;
+        align-items: end;
+        justify-content: end;
+        font-size: x-small;
+        font-weight: 600;
+
+        a {
+            color: black;
+            text-decoration: none;
+        }
+
+        &:hover {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+    }
+}
+
+.main-right {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 0.45rem;
+    border-top: solid 1rem components.$color-main1;
+    height: 38rem;
+    width: 56%;
+    overflow-y: scroll;
+
+    .about {
+        @include menu-main-center();
+
+        .about-title {
+            @include title-menu-center();
+        }
+
+        .about-description {
+            display: flex;
+            flex-direction: row;
+            font-size: 12px;
+
+            .about-description-txt {
+                color: components.$color-main1;
+                text-align: justify;
+                max-width: 45%;
+            }
+
+            .about-description-graph .about-list {
+                list-style: none;
+                margin-bottom: 1rem;
+                text-align: justify;
+
+                .icon {
+                    background-color: components.$color-main1;
+                    color: white;
+                    padding: 0.5rem;
+                    margin: 1rem;
+                }
+
+                .txt {
+                    color: black;
+                    margin-left: 2rem;
+                }
+            }
+        }
+
+        .about-cta .btn-main {
+            @include cta();
+        }
+    }
+
+    .resume {
+        border-top: 1px solid #ddd;
+        @include menu-main-center();
+
+        .resume-title {
+            @include title-menu-center();
+        }
+
+        .resume-type .item-resume {
+            display: flex;
+            justify-content: center;
+
+            .icon-title {
+                font-size: 4rem;
+                color: components.$color-main1;
+            }
+
+            .titles {
+                margin-left: 1rem;
+                margin-top: 1.5rem;
+                @include title-menu-center();
+            }
+        }
+
+        .resume-description .education-training {
+            color: components.$color-main1;
+            font-size: 12px;
+            text-align: justify;
+
+            .education-list {
+                margin-top: 0;
+                margin-bottom: 1rem;
+
+                .txt {
+                    margin-top: 0;
+                    margin-bottom: 1rem;
+                }
+            }
+        }
+
+        .resume-cta .btn-main {
+            @include cta();
+        }
+    }
+
+    .works {
+        border-top: 1px solid #ddd;
+        @include menu-main-center();
+
+        .work-title {
+            @include title-menu-center();
+        }
+
+        .item-work .list-work {
+            list-style: none;
+
+            .icon-work {
+                margin-left: 0;
+            }
+
+            .txt {
+                .title {
+                    color: black;
+                    font-size: 13.5px;
+                }
+
+                .date {
+                    color: gray;
+                    font-size: 12.5px;
+                }
+            }
+
+            .btn-main {
+                display: flex;
+                justify-content: center;
+                max-width: 8rem;
+                font-size: 11px;
+            }
+
+            .txt .description {
+                text-align: justify;
+                font-size: 12px;
+                color: components.$color-main1;
+                margin-bottom: 1.8rem;
+                margin-right: 0.6rem;
+            }
+
+        }
+
+        .work-cta .btn-main {
+            @include cta();
+        }
+    }
+
+    .portfolio {
+        border-top: 1px solid #ddd;
+        @include menu-main-center();
+
+        .portfolio-title {
+            @include title-menu-center();
+        }
+
+        //Alimentar con proyectos al Portfolio
+        .item-portfolio .list-portfolio {
+            list-style: square;
+            text-align: justify;
+            margin-right: 2rem;
+            margin-bottom: 15rem;
+
+            .title {
+                color: black;
+                font-size: 13.5px;
+
+                a {
+                    color: black;
+                    text-decoration: none;
+                }
+
+                &:hover {
+                    text-decoration: underline;
+                    cursor: pointer;
+                }
+            }
+
+            .description {
+                text-align: justify;
+                font-size: 14px;
+                color: components.$color-main1;
+            }
+
+            .author {
+                color: gray;
+                font-size: 12.5px;
+            }
+        }
+
+        .portfolio-cta .btn-main {
+            @include cta();
+        }
+    }
+
+    .contact {
+        border-top: 1px solid #ddd;
+        @include menu-main-center();
+        margin-bottom: 4rem;
+
+        .contact-title {
+            @include title-menu-center();
+        }
+
+        .contact-type .form-contact {
+            background-color: components.$color-main3;
+            margin-left: 1rem;
+            box-shadow: 7px 13px 37px rgba(#0070C3, 0.8);
+
+            header {
+                width: 100%;
+                background-color: components.$color-main1;
+                color: white;
+                font-size: 3rem;
+                text-align: center;
+
+                i {
+                    padding: 1rem;
+                }
+
+            }
+
+            .form {
+                padding: 1rem;
+                color: components.$color-main1;
+
+                label,
+                textarea,
+                input {
+                    display: block;
+                    width: 100%;
+                    margin-top: 0.1rem;
+                }
+
+                label {
+                    font-weight: 500;
+                    font-size: 15px;
+                }
+
+                textarea,
+                input[type='text'],
+                input[type='tel'],
+                input[type='email'] {
+                    border: none;
+                    border-bottom: 2px solid components.$color-main1;
+                    margin-bottom: 10px;
+                    font-size: 16px;
+                    outline: none;
+                    color: components.$color-main2;
+                }
+
+                textarea {
+                    min-height: 80px;
+                }
+
+                input[type='submit'] {
+                    padding: 0.7rem;
+                    width: 100%;
+                    font-size: 18px;
+                }
+            }
+
+            #mailForm {
+                opacity: 0;
+                cursor: default;
+            }
+        }
+
+        .contact-type .map-contact {
+            display: flex;
+            align-items: start;
+            justify-content: center;
+            width: 50%;
+        }
+
+    }
+
+}
+
+.wrapper {
+    display: inline-flex
+}
+
+.wrapper .dynamic-txts {
+    margin-left: 44px;
+    height: 2rem;
+    line-height: 2rem;
+    overflow: hidden;
+
+}
+
+.dynamic-txts li {
+    color: components.$color-main1;
+    list-style: none;
+    font-size: 1.5rem;
+    font-weight: 500;
+    position: relative;
+    top: 0;
+    animation: slide 10s steps(5) infinite;
+}
+
+@keyframes slide {
+    100% {
+        top: -10rem;
+    }
+}
+
+.dynamic-txts li span {
+    position: relative;
+}
+
+.dynamic-txts li span::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: components.$color-main3;
+    border-left: solid 2px components.$color-main1;
+    animation: typing 2s steps(19) infinite;
+}
+
+@keyframes typing {
+    100% {
+        left: 100%;
+        margin: 0 -25px 0 25px;
+    }
+}

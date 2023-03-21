@@ -1,0 +1,492 @@
+.btn-main, .btn-main-s {
+  padding: 0.45rem;
+  border-radius: 0.25rem;
+  justify-content: center;
+  background-color: #0075ff;
+  width: 100%;
+  height: 100%;
+  margin: 0.25rem;
+  display: flex;
+  color: white;
+  border: solid 1px #0075ff;
+}
+.btn-main:hover, .btn-main-s:hover {
+  background-color: white;
+  color: black;
+}
+.btn-main-s {
+  font-size: 0.75rem;
+  padding: 0.1rem 1rem;
+}
+
+.btn-sec, .btn-sec-s {
+  padding: 0.45rem;
+  border-radius: 0.25rem;
+  justify-content: center;
+  background-color: #0075ff;
+  width: 100%;
+  height: 100%;
+  margin: 0.25rem;
+  color: black;
+  background-color: transparent;
+  border: 1px solid #0075ff;
+}
+.btn-sec-s {
+  font-size: 0.75rem;
+  padding: 0.1rem 1rem;
+}
+.btn-sec:hover, .btn-sec-s:hover {
+  background-color: #0075ff;
+  color: white;
+}
+
+.icon-menu i {
+  padding: 0.1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  font-size: 0.8rem;
+  color: #0070C3;
+}
+.icon-menu i:hover {
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2509803922);
+  color: #0070C3;
+  cursor: pointer;
+}
+
+.icon-desc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.icon-desc i {
+  color: #F2F3ED;
+  font-size: 0.5rem;
+  padding: 0;
+}
+.icon-desc .tittle {
+  margin-top: -1rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.person-description .person-title {
+  display: flex;
+  justify-content: center;
+  padding-top: 0.8rem;
+  font-family: "Volkhov", serif;
+  color: black;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.main-menu {
+  margin-bottom: 0;
+}
+.main-menu li {
+  padding: 1rem;
+  margin-top: 3.5rem;
+  list-style: none;
+  display: inline-flex;
+  justify-items: center;
+  margin-right: 0;
+}
+.main-menu li a {
+  color: black;
+  text-decoration: none;
+}
+.main-menu li a:hover {
+  text-decoration: underline;
+}
+
+.dropdown-menu .btn-sec, .dropdown-menu .btn-sec-s {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+}
+
+html body {
+  margin: 0;
+  padding: 1rem 1rem 1rem 2rem;
+  background-color: #0070C3;
+}
+
+.menu-left {
+  padding-top: 1.5rem;
+  background-color: white;
+  border-radius: 0.65rem;
+  border: solid 2px #0070C3;
+  border-top: solid 1rem #0070C3;
+  height: 12rem;
+  width: 10%;
+}
+.menu-left .language {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+}
+.menu-left .language .btn-sec {
+  padding: 0.5rem;
+  font-size: 14px;
+  margin-bottom: 0.2rem;
+  text-align: center;
+}
+.menu-left .language .btn-main {
+  padding: 0.5rem;
+  font-size: 14px;
+  margin-bottom: 0.2rem;
+  text-align: center;
+}
+.menu-left .language a {
+  text-decoration: none;
+}
+
+.menu-center {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #F2F3ED;
+  border: solid 1.5px #0070C3;
+  border-radius: 0.25rem;
+  height: 32rem;
+  width: 32%;
+}
+.menu-center .person-menu {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  border: none;
+  background-color: #F2F3ED;
+}
+.menu-center .download-cv .downloads {
+  margin-top: 2rem;
+  display: flex;
+  align-items: end;
+  justify-content: end;
+  font-size: x-small;
+  font-weight: 600;
+}
+.menu-center .download-cv .downloads a {
+  color: black;
+  text-decoration: none;
+}
+.menu-center .download-cv .downloads:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.main-right {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 0.45rem;
+  border-top: solid 1rem #0070C3;
+  height: 38rem;
+  width: 56%;
+  overflow-y: scroll;
+}
+.main-right .about {
+  padding-top: 0.5;
+  align-items: start;
+}
+.main-right .about .about-title {
+  padding-top: 1.5rem;
+  padding-bottom: 2.5rem;
+  justify-content: left;
+  font-family: "Playfair Display", serif;
+  font-size: 18px;
+}
+.main-right .about .about-description {
+  display: flex;
+  flex-direction: row;
+  font-size: 12px;
+}
+.main-right .about .about-description .about-description-txt {
+  color: #0070C3;
+  text-align: justify;
+  max-width: 45%;
+}
+.main-right .about .about-description .about-description-graph .about-list {
+  list-style: none;
+  margin-bottom: 1rem;
+  text-align: justify;
+}
+.main-right .about .about-description .about-description-graph .about-list .icon {
+  background-color: #0070C3;
+  color: white;
+  padding: 0.5rem;
+  margin: 1rem;
+}
+.main-right .about .about-description .about-description-graph .about-list .txt {
+  color: black;
+  margin-left: 2rem;
+}
+.main-right .about .about-cta .btn-main {
+  margin: 3rem;
+  width: 9rem;
+  height: 2.5rem;
+}
+.main-right .resume {
+  border-top: 1px solid #ddd;
+  padding-top: 0.5;
+  align-items: start;
+}
+.main-right .resume .resume-title {
+  padding-top: 1.5rem;
+  padding-bottom: 2.5rem;
+  justify-content: left;
+  font-family: "Playfair Display", serif;
+  font-size: 18px;
+}
+.main-right .resume .resume-type .item-resume {
+  display: flex;
+  justify-content: center;
+}
+.main-right .resume .resume-type .item-resume .icon-title {
+  font-size: 4rem;
+  color: #0070C3;
+}
+.main-right .resume .resume-type .item-resume .titles {
+  margin-left: 1rem;
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  padding-bottom: 2.5rem;
+  justify-content: left;
+  font-family: "Playfair Display", serif;
+  font-size: 18px;
+}
+.main-right .resume .resume-description .education-training {
+  color: #0070C3;
+  font-size: 12px;
+  text-align: justify;
+}
+.main-right .resume .resume-description .education-training .education-list {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+.main-right .resume .resume-description .education-training .education-list .txt {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+.main-right .resume .resume-cta .btn-main {
+  margin: 3rem;
+  width: 9rem;
+  height: 2.5rem;
+}
+.main-right .works {
+  border-top: 1px solid #ddd;
+  padding-top: 0.5;
+  align-items: start;
+}
+.main-right .works .work-title {
+  padding-top: 1.5rem;
+  padding-bottom: 2.5rem;
+  justify-content: left;
+  font-family: "Playfair Display", serif;
+  font-size: 18px;
+}
+.main-right .works .item-work .list-work {
+  list-style: none;
+}
+.main-right .works .item-work .list-work .icon-work {
+  margin-left: 0;
+}
+.main-right .works .item-work .list-work .txt .title {
+  color: black;
+  font-size: 13.5px;
+}
+.main-right .works .item-work .list-work .txt .date {
+  color: gray;
+  font-size: 12.5px;
+}
+.main-right .works .item-work .list-work .btn-main {
+  display: flex;
+  justify-content: center;
+  max-width: 8rem;
+  font-size: 11px;
+}
+.main-right .works .item-work .list-work .txt .description {
+  text-align: justify;
+  font-size: 12px;
+  color: #0070C3;
+  margin-bottom: 1.8rem;
+  margin-right: 0.6rem;
+}
+.main-right .works .work-cta .btn-main {
+  margin: 3rem;
+  width: 9rem;
+  height: 2.5rem;
+}
+.main-right .portfolio {
+  border-top: 1px solid #ddd;
+  padding-top: 0.5;
+  align-items: start;
+}
+.main-right .portfolio .portfolio-title {
+  padding-top: 1.5rem;
+  padding-bottom: 2.5rem;
+  justify-content: left;
+  font-family: "Playfair Display", serif;
+  font-size: 18px;
+}
+.main-right .portfolio .item-portfolio .list-portfolio {
+  list-style: square;
+  text-align: justify;
+  margin-right: 2rem;
+  margin-bottom: 15rem;
+}
+.main-right .portfolio .item-portfolio .list-portfolio .title {
+  color: black;
+  font-size: 13.5px;
+}
+.main-right .portfolio .item-portfolio .list-portfolio .title a {
+  color: black;
+  text-decoration: none;
+}
+.main-right .portfolio .item-portfolio .list-portfolio .title:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.main-right .portfolio .item-portfolio .list-portfolio .description {
+  text-align: justify;
+  font-size: 14px;
+  color: #0070C3;
+}
+.main-right .portfolio .item-portfolio .list-portfolio .author {
+  color: gray;
+  font-size: 12.5px;
+}
+.main-right .portfolio .portfolio-cta .btn-main {
+  margin: 3rem;
+  width: 9rem;
+  height: 2.5rem;
+}
+.main-right .contact {
+  border-top: 1px solid #ddd;
+  padding-top: 0.5;
+  align-items: start;
+  margin-bottom: 4rem;
+}
+.main-right .contact .contact-title {
+  padding-top: 1.5rem;
+  padding-bottom: 2.5rem;
+  justify-content: left;
+  font-family: "Playfair Display", serif;
+  font-size: 18px;
+}
+.main-right .contact .contact-type .form-contact {
+  background-color: #F2F3ED;
+  margin-left: 1rem;
+  box-shadow: 7px 13px 37px rgba(0, 112, 195, 0.8);
+}
+.main-right .contact .contact-type .form-contact header {
+  width: 100%;
+  background-color: #0070C3;
+  color: white;
+  font-size: 3rem;
+  text-align: center;
+}
+.main-right .contact .contact-type .form-contact header i {
+  padding: 1rem;
+}
+.main-right .contact .contact-type .form-contact .form {
+  padding: 1rem;
+  color: #0070C3;
+}
+.main-right .contact .contact-type .form-contact .form label,
+.main-right .contact .contact-type .form-contact .form textarea,
+.main-right .contact .contact-type .form-contact .form input {
+  display: block;
+  width: 100%;
+  margin-top: 0.1rem;
+}
+.main-right .contact .contact-type .form-contact .form label {
+  font-weight: 500;
+  font-size: 15px;
+}
+.main-right .contact .contact-type .form-contact .form textarea,
+.main-right .contact .contact-type .form-contact .form input[type=text],
+.main-right .contact .contact-type .form-contact .form input[type=tel],
+.main-right .contact .contact-type .form-contact .form input[type=email] {
+  border: none;
+  border-bottom: 2px solid #0070C3;
+  margin-bottom: 10px;
+  font-size: 16px;
+  outline: none;
+  color: #0075ff;
+}
+.main-right .contact .contact-type .form-contact .form textarea {
+  min-height: 80px;
+}
+.main-right .contact .contact-type .form-contact .form input[type=submit] {
+  padding: 0.7rem;
+  width: 100%;
+  font-size: 18px;
+}
+.main-right .contact .contact-type .form-contact #mailForm {
+  opacity: 0;
+  cursor: default;
+}
+.main-right .contact .contact-type .map-contact {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  width: 50%;
+}
+
+.wrapper {
+  display: inline-flex;
+}
+
+.wrapper .dynamic-txts {
+  margin-left: 44px;
+  height: 2rem;
+  line-height: 2rem;
+  overflow: hidden;
+}
+
+.dynamic-txts li {
+  color: #0070C3;
+  list-style: none;
+  font-size: 1.5rem;
+  font-weight: 500;
+  position: relative;
+  top: 0;
+  animation: slide 10s steps(5) infinite;
+}
+
+@keyframes slide {
+  100% {
+    top: -10rem;
+  }
+}
+.dynamic-txts li span {
+  position: relative;
+}
+
+.dynamic-txts li span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #F2F3ED;
+  border-left: solid 2px #0070C3;
+  animation: typing 2s steps(19) infinite;
+}
+
+@keyframes typing {
+  100% {
+    left: 100%;
+    margin: 0 -25px 0 25px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
