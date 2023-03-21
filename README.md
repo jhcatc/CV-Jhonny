@@ -1,2 +1,5 @@
 # CV-Jhonny
-Hoja de Vida
+Autor: Jhonny Jose Catari - Marzo 2023
+
+
+## Hoja de Vida
